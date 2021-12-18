@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+
 	<title>LGHS Open-Source Club</title>
 	<link rel="icon" type="image/x-icon" href="https://content.instructables.com/ORIG/F4N/CMI2/HSVH0DQL/F4NCMI2HSVH0DQL.png?auto=webp">
 	<meta charset="UTF-8">
@@ -9,16 +9,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
+    /*the CSS code for the body only sets the background*/
 		body {
 			background-image: url('https://flintbuilders.com/wp-content/uploads/2019/02/3215014000_N11_originaljpg_web.jpg');
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
-		}
-
-		restofpage {
-			width: 50%;
-			padding: 10px;
 		}
 	</style>
 
@@ -28,37 +24,45 @@
 	<!-- centers the open-source club picture & title -->
 	<center>
 		<img src="https://content.instructables.com/ORIG/F4N/CMI2/HSVH0DQL/F4NCMI2HSVH0DQL.png?auto=webp" width=150 height=150></img>
-      <div style="color: #F34F29;font-size:60px;font-weight:bold;font-family:Copperplate;">LGHS Open-Source Club</div>
+      <div style="color:#F34F29;font-size:60px;font-weight:bold;font-family:Copperplate;">LGHS Open-Source Club</div>
     </center>
-    
     <br>
 
     <!-- the "body" essentially -->
     <center>
-    <restofpage>
-      <readme style="font-size:29px;">
-        We're a small group of students at LGHS that meets every Monday and Friday <br>on even weeks, and every Tuesday and Thursday on odd weeks.<br><br>Our GitHub and Discord are linked below.<br>
-      </readme>
+    <restofpage style="width: 50%;padding:10px;">
+
+      <!-- this div prevents the words and all elements from escaping the grey rectangle's parameters -->
+      <div style="margin-top:0px;margin-bottom:0px;margin-right:150px;margin-left:150px;font-size:2.5em;font-family:Arial;color: #24292f;background-color:rgba(80,80,80,.29);">
+
+        We're a small group of students at LGHS that meets every Monday and Friday on even weeks, and every Tuesday and Thursday on odd weeks. We do programming related projects online and in-person.
+        <br><br>
+        Our <c style="color:#000000">GitHub</c> and <c style="color:#5865F2">Discord</c> are linked below.
+        <br>
 
         <!-- creates the github picture and button -->
-        <a href="https://github.com/Open-Source-Club" target="_blank" style="position: absolute;top:400px;left:625px;"><img src="https://www.infolob.com/wp-content/uploads/2020/04/github.png" width="300" height="111.43"></img></a>
+        <a href="https://github.com/Open-Source-Club" target="_blank" style="right:50%;"><img src="https://www.infolob.com/wp-content/uploads/2020/04/github.png" width="300" height="105"></img></a>
 
         <!-- creates the discord picture and button -->
-        <a href="https://discord.gg/ypBzbATXnj" target="_blank" style="position:absolute;top:425px;"><img src="https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg" width="300" height="61.92"></img></a>
+        <a href="https://discord.gg/ypBzbATXnj" target="_blank" style="left:50%;"><img src="https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg" width="300" height="105"></img></a>
 
-      
+        <br><br>
+        <c style="color:#F34F29;font-size:60px;font-weight:bold;font-family:Copperplate;"><u>Projects</u></c>
+        <br>
+        
+        <div style="font-size:.7em;">
+        LGHS Chess
 
-        <!-- creates the grey rectangle in the background -->
-        <svg height="98%" width="70%" style="position:fixed;top:240px;right:86px;pointer-events:none;">
-          <rect height="98%" width="70%" style="fill:rgba(80,80,80,.3);stroke-width:3;  stroke:rgba(80,80,80,.3);"/>
-        </svg>
-
+        <!-- creates a knight picture and button -->
+        <a href="https://lghsopensource.club/" target="_blank"><img src="https://lh3.googleusercontent.com/proxy/_6aIEjbvDHpanIkZ5I6_EVTCviaws1BJP8KG26N16LCvqTrZkAHsz92_cxZMIkJusXrAYrKgeZ4AI-0SjqOhidsElQ_eopHfAcc7IzFYQtICSHUMVZ39RoJDR6ymDp7iPelv5zTeoAQnhLLA5ftbkpg" width="40" height="40"></img></a>
+        
+        (click on the knight!) is a vote chess web app that allows two schools to play chess against each other. The entire student body is able to participate and vote on the moves individually. The move with the most votes at the end of the voting period is displayed on the website. You can find our code, here:
+        
+        <!-- creates a github icon and button -->
+        <a href="https://github.com/Open-Source-Club/LGHS-Chess" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40" height="40"></img></a>
+        </div>
+      </div>
     </restofpage>
     </center>
-
-    <!-- creates a rectangle
-    <svg height="98%" width="70%" style="position:fixed;top:240px;left:495px;">
-      <rect height="98%" width="70%" style="fill:rgba(80,80,80,.3);stroke-width:3;stroke:rgba(80,80,80,.3);"/>
-    </svg>-->
   </body>
 </html>
