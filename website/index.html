@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title>LGHS Open-Source Club</title>
 	<link rel="icon" type="image/x-icon" href="https://content.instructables.com/ORIG/F4N/CMI2/HSVH0DQL/F4NCMI2HSVH0DQL.png?auto=webp">
+	<link rel="stylesheet" href="webstyle.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<style>
-    /*the CSS code for the body only sets the background*/
-		body {
-			background-image: url('https://flintbuilders.com/wp-content/uploads/2019/02/3215014000_N11_originaljpg_web.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-		}
-	</style>
-
 </head>
-
 <body>
 	<!-- centers the open-source club picture & title -->
 	<center>
 		<img src="https://content.instructables.com/ORIG/F4N/CMI2/HSVH0DQL/F4NCMI2HSVH0DQL.png?auto=webp" width=150 height=150></img>
-    <div style="color:#F34F29;font-size:4rem;font-weight:bold;font-family:Copperplate;">LGHS Open-Source Club</div>
-  </center>
-    <br>
-
-    <!-- the "body" essentially -->
-    <center>
-      <!-- this div prevents the words and all elements from escaping the grey rectangle's parameters -->
-      <div style="margin-left:8vw;margin-right:8vw;font-size:2.5rem;font-family:Arial;color:#24292f;background-color:rgba(80,80,80,.4);">
-
-        We're a group of students that meet twice a week and do programming related projects together.
-        <br><br>
-        Our GitHub and Discord are linked below.
-        <br>
-
-        <!-- creates the github picture and button -->
-        <a href="https://github.com/Open-Source-Club" target="_blank" style="right:50%;"><img src="https://www.infolob.com/wp-content/uploads/2020/04/github.png" width="300vw" height="105vw"></img></a>
-
-        <!-- creates the discord picture and button -->
-        <a href="https://discord.gg/ypBzbATXnj" target="_blank" style="left:50%;"><img src="https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg" width="300vw" height="105vw"></img></a>
-
-        <br><br>
-        <div style="color:#F34F29;font-weight:bold;font-family:Copperplate;font-size:4rem;"><u>Projects</u></div>
-        <br>
+		<div id="headertitle">LGHS Open-Source Club</div>
+	</center>
+	<br>
+	<center>
+		<!-- this div prevents the words and all elements from escaping the grey rectangle's parameters -->
+		<div id="bodymain">
+			We're a group of students that meet twice a week and do programming related projects together.
+			<br><br>
+			Our GitHub and Discord are linked below.
+			<br>
+			
+			<!-- creates the github picture and button -->
+			<a href="https://github.com/Open-Source-Club" target="_blank" style="right:50%;"><img src="https://www.infolob.com/wp-content/uploads/2020/04/github.png" width="300vw" height="105vw"></img></a>
+			<!-- creates the discord picture and button -->
+      			<a href="https://discord.gg/ypBzbATXnj" target="_blank" style="left:50%;"><img src="https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg" width="300vw" height="105vw"></img></a>
+      			<br><br>
+      			<div id="subtitle"><u>Projects</u></div>
+      			<br>
+      			<div style="color:#24292f;clear:left;">
+        			<a id="link" href="/chess">LGHS Chess</a>
         
-        <div style="color:#24292f;clear:left;">
-		  <a style="color:#24292f;text-decoration:none;"href="/chess">LGHS Chess</a>
+        			<!-- creates a knight picture and button -->
+		    		<a href="/chess"><img src="favicon.ico" width="40" height="40"></img></a>
+        			<!-- CHECK TO MAKE SURE THE ICON WORKS WITH HREF "/chess" -->
 
-		  <!-- creates a knight picture and button -->
-		  <a href="/chess"><img src="favicon.ico" width="40" height="40"></img></a>
+		 	</div>
 		</div>
-      </div>
-    </center>
-  </body>
+
+  	</center>
+</body>
 </html>
