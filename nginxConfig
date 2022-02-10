@@ -1,0 +1,35 @@
+server {
+        listen 443 ssl;
+        server_name lghsopensource.club;
+
+        ssl_certificate        /etc/letsencrypt/live/lghsopensource.club/fullchain.pem;
+        ssl_certificate_key    /etc/letsencrypt/live/lghsopensource.club/privkey.pem;
+	
+	location / {
+	    root /home/ubuntu/Website;	
+            index index.html;
+	}
+
+        location /chess/ {
+            proxy_set_header Host $http_host/chess;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Scheme $scheme;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_redirect    off;
+            add_header Pragma "no-cache";
+            add_header Cache-Control "no-cache";
+
+            proxy_pass http://localhost:8080/;
+            sub_filter 'action="/'  'action="/chess/';
+            sub_filter 'href="/'  'href="/chess/';
+            sub_filter 'src="/'  'src="/chess/';
+            sub_filter_once off;
+	}
+}
+
+server {
+    listen 80;
+    server_name lghsopensource.club;
+    return 301 https://lghsopensource.club/$request_uri;
+}
