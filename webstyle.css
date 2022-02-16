@@ -1,29 +1,27 @@
 body {
-  background-image: url(/images/background.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #title {
-  color:#F34F29;
-  font-size:4rem;
-  font-weight:bold;
-  font-family:Copperplate;
+    color:#F34F29;
+    font-size:4rem;
+    font-weight:bold;
+    font-family:Copperplate;
 }
 
 #container {
-  margin-left:8vw;
-  margin-right:8vw;
-  font-size:2.5rem;
-  font-family:Arial;
-  color:#000000;
-  background-color:rgba(80,80,80,.4);
+    font-weight:bold;
+    font-size:2.5rem;
+    font-family:Arial;
+    color:#000000;
 }
 
 #subtitle {
-  color:#F34F29;
-  font-weight:bold;
-  font-family:Copperplate;
-  font-size:4rem;
+    color:#F34F29;
+    font-weight:bold;
+    font-family:Copperplate;
+    font-size:4rem;
 }
